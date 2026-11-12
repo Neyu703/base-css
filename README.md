@@ -4,7 +4,23 @@ Responsive base layer (tokens, reset, safe areas, centered container) for phone,
 
 ## Use
 
-Static page:
+pnpm (Git dependency, versions are Git tags; pins the commit in the lockfile):
+
+```
+pnpm add -D github:Neyu703/base-css#v1.0.0
+```
+
+```ts
+import "@neyu703/base-css/base.css";
+```
+
+```scss
+@use "@neyu703/base-css/scss/mixins" as *;
+```
+
+Apps without a build step copy the file out of `node_modules` instead (see `coords-checklist`, script `sync:base-css`).
+
+Static page or submodule:
 
 ```html
 <link rel="stylesheet" href="vendor/base-css/base.css">

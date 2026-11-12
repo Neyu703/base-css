@@ -1,0 +1,12 @@
+{
+  "name": "@neyu703/base-css",
+  "version": "1.0.0",
+  "description": "Responsive base CSS: tokens, reset, safe areas, container for phone, tablet and desktop",
+  "repository": "github:Neyu703/base-css",
+  "files": ["base.css", "scss"],
+  "exports": {
+    "./base.css": "./base.css",
+    "./scss/mixins": "./scss/_mixins.scss",
+    "./package.json": "./package.json"
+  }
+}
