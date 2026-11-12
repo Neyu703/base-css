@@ -12,6 +12,8 @@ Static page:
 
 Vite/Sass app: `import "../vendor/base-css/base.css";` before the app styles.
 
+Sass apps additionally get mixins (text styles, `card`, `grouped-list`, `filled-button`, ...) that build on the tokens: `@use "../../vendor/base-css/scss/mixins" as *;`. `base.css` stays the single source of truth for tokens and layout; Sass can load it directly (`@use "vendor/base-css/base"`), so there is no generated parallel copy to keep in sync.
+
 Add it as a submodule: `git submodule add https://github.com/Neyu703/base-css.git vendor/base-css`. For GitHub Pages workflows, use `actions/checkout` with `submodules: true`.
 
 ## Window-size classes
